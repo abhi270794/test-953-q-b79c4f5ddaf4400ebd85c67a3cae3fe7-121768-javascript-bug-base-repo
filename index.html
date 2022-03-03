@@ -18,8 +18,8 @@
       //For each of our buttons when the user clicks it... 
       document.getElementById(`btn-${btnNum}`).onclick = (e) => {
         //Tell her what she's won!
-        let data = e.target.id.slice(-1);
-        document.getElementById("prize").innerHTML = prizes[data];
+        
+        document.getElementById("prize").innerHTML = prizes[btnNum];
       }
     }
   </script>
