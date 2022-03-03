@@ -14,12 +14,12 @@
 
   <script>
     const prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!']
-    for (var btnNum = 0; btnNum < prizes.length; btnNum++) {
+    for (let btnNum = 0; btnNum < prizes.length; btnNum++) {
       //For each of our buttons when the user clicks it... 
       document.getElementById(`btn-${btnNum}`).onclick = (e) => {
         //Tell her what she's won!
-        let prize4 = e.target.id.slice(-1);
-        document.getElementById("prize").innerHTML = prizes[prize4];
+        
+        document.getElementById("prize").innerHTML = prizes[btnNum];
       }
     }
   </script>
